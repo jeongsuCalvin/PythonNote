@@ -41,3 +41,12 @@ for number in range(len(marks)):
     if marks[number] < 60:
          continue
     print ("Student %d is passed" %(number+1))
+# marks has 5 int
+# range (5 = len(marks)) - repeat 0,1,2,3,4 = 5 times & print number +1 for student number
+# marks[number] - bring numbers order to range (0,1,2,3,4) and compare with <60
+#if the socore is under the 60, it pass and move to next number
+for i in range(1,10):
+     for j in range(1,10):
+          print(i*j, end=" ")
+     print(' ')
+####### end=" " -> not keep the line / print (' ') change the line
