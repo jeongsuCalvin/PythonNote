@@ -1,3 +1,4 @@
+'''
 #First Git for the study
 #For fucntion
 #1 step for function
@@ -49,4 +50,20 @@ for i in range(1,10):
      for j in range(1,10):
           print(i*j, end=" ")
      print(' ')
-####### end=" " -> not keep the line / print (' ') change the line
+####### end=" " -> not keep the line / print (' ') change the line\
+'''
+#list add
+# list.append(element) - add element to end of the list
+# list.insert(index, element) - add element to location of the list
+# list.extend([element, , , ...]) - add many element to end of the list
+#list delete
+# del list[index] / del list[x:b] delete x~b-1 index
+# list.pop(index)
+# list.remove(value) delete certain value in the list
+# list.clear() delete all element
+
+numbers=[273,103,5,32,65,9,72,800,99]
+
+for number in numbers:
+    if number >= 100:
+        print(number)
