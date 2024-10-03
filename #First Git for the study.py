@@ -100,11 +100,76 @@ print(output)
 '''
 
 #Dictionary
-
-product = {
+'''
+products = [{
+    "Name" : "Mango",
+    "Price" : 2,
+    "Type" : "Food",
+},{
     "Name" : "Mango",
     "Price" : 2,
     "Type" : "Food",
 }
+]
+for product in products:
+     for key in product:
+          print(key)
+          print(product[key])
+     print("-"*20)
+# dictionary["new key"] = new value
+# dictionary["old key"] = new value
+#del dictionary["key"]
+# dictionary.get("not exist key") -> outpur : None
 
-product["Name"]
+dict_a = {
+     "name" : "Cloud"
+}
+print (dict_a)
+del dict_a["name"]
+print (dict_a)
+'''
+pets = [
+    {"name": "Cloud", "Age": 5},
+    {"name": "Max", "Age": 2},
+    {"name": "Coco", "Age": 1},
+    {"name": "Taco", "Age": 4},
+    {"name": "Bell", "Age": 7}
+]
+
+print ("# Lynnwood dogs")
+for pet in pets:
+    print(pet["name"], pet["Age"])
+
+numbers=[1,2,6,8,4,3,2,1,9,5,4,9,7,2,1,5,3,4,8,9,7,2,3]
+counter={}
+
+for number in numbers:
+     value=counter.get(number)
+     if value is None:
+          counter[number]=0
+     counter[number]=counter[number]+1
+
+print (counter)
+#
+character = {
+     "name": "Knight",
+     "level": 12,
+     "items": {
+          "sword": "Fire sword",
+          "armor": "Full plate"
+     },
+     "skill": ["Slash", "Slash hard", "Slash Very hard"]
+}
+
+for key in character:
+     print(type(character[key]))
+     if type(character[key]) is list:
+          for detail in character[key]:
+               print (key, " : ", detail)
+     
+     elif type(character[key]) is dict:
+          for detail in character[key]:
+               print (detail, " : ", character[key][detail])
+
+     else:
+          print (key, " : ", character[key])
