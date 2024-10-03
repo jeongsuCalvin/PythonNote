@@ -61,9 +61,50 @@ for i in range(1,10):
 # list.pop(index)
 # list.remove(value) delete certain value in the list
 # list.clear() delete all element
-
+'''
 numbers=[273,103,5,32,65,9,72,800,99]
 
 for number in numbers:
     if number >= 100:
         print(number)
+'''
+'''
+#print over 100
+
+numbers=[273,103,5,32,65,9,72,800,99]
+for number in numbers:
+    if number%2==0:
+       print(number, " is even number")
+    else:
+       print(number," is odd number")
+
+for number in numbers:
+   print(number, "is ",len(str(number))," digit number")
+
+list_of_list=[
+   [1,2,3],
+   [4,5,6,7],
+   [8,9],
+]
+
+for i in list_of_list:
+   for number in i:
+      print (number)
+
+numbers = [1,2,3,4,5,6,7,8,9]
+output = [[],[],[]]
+
+for number in numbers:
+   output[(number+(len(output)-1))%len(output)].append(number)
+print(output)
+'''
+
+#Dictionary
+
+product = {
+    "Name" : "Mango",
+    "Price" : 2,
+    "Type" : "Food",
+}
+
+product["Name"]
