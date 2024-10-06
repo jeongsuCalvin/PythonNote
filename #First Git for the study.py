@@ -160,7 +160,7 @@ character = {
      },
      "skill": ["Slash", "Slash hard", "Slash Very hard"]
 }
-
+'''
 for key in character:
      print(type(character[key]))
      if type(character[key]) is list:
@@ -173,3 +173,26 @@ for key in character:
 
      else:
           print (key, " : ", character[key])
+'''
+#for + list
+array = [273,32,103,57,52]
+
+for i in range(len(array)):
+     print("{}th repeated : {}".format(i,array[i]))
+
+#reverse
+for i in range(4,0-1,-1):
+     print (i, end="")
+#while
+i=0
+while i < 10:
+     print(i)
+     i+=1
+
+list_test = [1,2,1,2]
+value = 2
+
+while value in list_test:
+     list_test.remove(value)
+
+print (list_test)
